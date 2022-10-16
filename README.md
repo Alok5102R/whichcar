@@ -1,2 +1,2 @@
 # whichcar
-Website to get suggestion for desired Car as per your requirements.
+A website to help you decide best Car as per your requirements.
