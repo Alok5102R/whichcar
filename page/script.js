@@ -20,57 +20,45 @@ function getFilteredCars() {
     {
       car: 'Maruti',
       colour: ['Red 🔴', 'Blue 🔵'],
-      colr: '🔴 🔵 ⚫ ⚪',
+      colr: '🔴 🔵',
       type: 'SUV',
       price: 18,
     },
     {
       car: 'H City',
       colour: ['Red 🔴', 'Blue 🔵', 'Black ⚫'],
-      colr: '🔴 🔵 ⚫ ⚪',
+      colr: '🔴 🔵 ⚫',
       type: 'SUV',
       price: 12,
     },
   ];
 
-  let resultCar = [];
-  let resultPrice = [];
+  let resultCars = [];
+  let resultPrices = [];
   let j = 0;
-  let t = '';
-  let cl = '';
+  let carSuggestions = '';
+
   for (let i = 0; i < cars.length; i++) {
-    let clr = 0;
+    let match = false;
 
     if (
       cars[i]['price'] >= fPrice &&
       cars[i]['price'] <= tPrice &&
       cars[i]['type'] == type
     ) {
-      for (let k = 0; k < cars[i].colour.length; k++) {
-        if (cars[i].colour[k] == color) {
-          clr = 1;
-        }
-        cl =
-          cl +
-          cars[i].colour[k].substring(cars[i].colour[k].length - 1, 1) +
-          ' ';
-      }
-      if (clr == 1) {
-        resultCar[j] = cars[i]['car'];
-        resultPrice[j] = cars[i]['price'] + ' lacs ' + ' | ' + cars[i].colr;
-        j = j + 1;
+      for (let k = 0; k < cars[i].colour.length; k++)
+        if (cars[i].colour[k] == color) match = true;
+      if (match) {
+        resultCars[j] = cars[i]['car'];
+        resultPrices[j++] = cars[i]['price'] + ' lacs ' + ' | ' + cars[i].colr;
+        match = false;
       }
     }
   }
 
-  for (let i = 0; i < resultCar.length - 1; i++) {
-    t = t + resultCar[i] + ' : Rs. ' + resultPrice[i] + '\n';
+  for (let i = 0; i < resultCars.length; i++) {
+    carSuggestions += resultCars[i] + ' : Rs. ' + resultPrices[i] + '\n';
   }
-  t =
-    t +
-    resultCar[resultCar.length - 1] +
-    ' : Rs. ' +
-    resultPrice[resultCar.length - 1];
 
-  document.querySelector('#demo').textContent = t;
+  document.querySelector('#demo').textContent = carSuggestions;
 }
