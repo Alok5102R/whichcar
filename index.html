@@ -1,130 +1,134 @@
+
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>whichcar</title>
-        <script src="https://cdn.tailwindcss.com"></script>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="img/icon.svg" class="w-10 h-10 text-white p-1/2 bg-blue-500 rounded-full">
-    </head>
-    <body class="bg-gray-900">
-        <header class="text-gray-400 body-font">
-            <div class="container mx-auto flex flex-wrap p-5 flex-row items-center justify-between">
-              <a class="flex title-font font-medium items-center text-gray-900  md:mb-0">
+<head>
+    <title>whichcar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.svg" class="w-10 h-10 text-white p-1/2 bg-blue-500 rounded-full">
+    <link rel="stylesheet" href="styles/app.css">
+
+</head>
+<body class="bg-gray-900">
+    <header class="text-gray-400 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-row items-center justify-between whichcar-landing-template">
+            <a class="flex title-font font-medium items-center text-gray-900  md:mb-0">
                 <img src="img/icon.svg" class="w-10 h-10 text-white p-1/2 bg-blue-500 rounded-full">
                 <span class="ml-3 text-xl">whichcar</span>
-              </a>
-              <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
                 <a class="mr-5 hover:text-gray-300"></a>
                 <a class="mr-5 hover:text-gray-300"></a>
                 <a class="mr-5 hover:text-gray-300"></a>
                 <a class="mr-5 hover:text-gray-300"></a>
-              </nav>
-              <button class="inline-flex items-center text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-600 rounded text-base md:mt-0">Whichcar</button>
-            </div>
-          </header>
+            </nav>
+            <button class="inline-flex items-center text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-600 rounded text-base md:mt-0">Whichcar</button>
+        </div>
+    </header>
 
-          <section class="text-gray-400 bg-gray-900 body-font">
-            <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
-              <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="img/logoF.png">
-              <div class="text-center lg:w-2/3 w-full">
+    <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col whichcar-landing-template-main">
+            <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="img/logoF.png">
+            <div class="text-center lg:w-2/3 w-full">
                 <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white">Why WHICHCAR?</h1>
                 <p class="leading-relaxed mb-8">We provide you the best suggestion for Cars, as per your requirements. No need to worry about technical features, connect with us and relax.</p>
                 <div class="flex justify-center">
-                  <button class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg"><a href="page/choose.html" target="_blank">Choose Car</a></button>
+                    <button class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg"><a href="page/choose.html" target="_blank">Choose Car</a></button>
                 </div>
-              </div>
             </div>
-          </section>
+        </div>
+    </section>
 
-          <section class="text-gray-400 bg-gray-900 body-font">
-            <h3 class="title-font sm:text-4xl text-center text-3xl mb-4 font-medium text-gray-300">Steps to get suggestions:</h3>
-            <div class="container px-5 py-24 mx-auto flex flex-wrap">
-              <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+    <section class="text-gray-400 bg-gray-900 body-font">
+        <h3 class="title-font sm:text-4xl text-center text-3xl mb-4 font-medium text-gray-300">Steps to get suggestions:</h3>
+        <div class="container px-5 py-24 mx-auto flex flex-wrap">
+            <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
                 <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-                  <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+                    <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
                 </div>
                 <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">1</div>
                 <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                  <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-blue-400 rounded-full inline-flex items-center justify-center">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
-                      <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                    </svg>
-                    
-                  </div>
-                  <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                    <h2 class="font-medium title-font text-white mb-1 text-xl">Choose Price range</h2>
-                    <p class="leading-relaxed">Choose price range in multiples of 5 as per your budget.</p>
-                  </div>
+                    <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-blue-400 rounded-full inline-flex items-center justify-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+                        </svg>
+
+                    </div>
+                    <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                        <h2 class="font-medium title-font text-white mb-1 text-xl">Choose Price range</h2>
+                        <p class="leading-relaxed">Choose price range in multiples of 5 as per your budget.</p>
+                    </div>
                 </div>
-              </div>
-              <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+            </div>
+            <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
                 <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-                  <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+                    <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
                 </div>
                 <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">2</div>
                 <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                  <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-blue-400 rounded-full inline-flex items-center justify-center">
-                  <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                  </svg>  
-                  </div>
-                  <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                    <h2 class="font-medium title-font text-white mb-1 text-xl">Choose colour</h2>
-                    <p class="leading-relaxed">Choose colour which suits your look.</p>
-                  </div>
+                    <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-blue-400 rounded-full inline-flex items-center justify-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                        <h2 class="font-medium title-font text-white mb-1 text-xl">Choose colour</h2>
+                        <p class="leading-relaxed">Choose colour which suits your look.</p>
+                    </div>
                 </div>
-              </div>
-              <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
+            </div>
+            <div class="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
                 <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-                  <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+                    <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
                 </div>
                 <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">3</div>
                 <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                  <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-blue-400 rounded-full inline-flex items-center justify-center">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
-                      <circle cx="12" cy="5" r="3"></circle>
-                      <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
-                    </svg>
-                  </div>
-                  <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                    <h2 class="font-medium title-font text-white mb-1 text-xl">Choose type</h2>
-                    <p class="leading-relaxed">Choose type of car as per your requirements, either SUV, Sedan or a Supercar.</p>
-                  </div>
+                    <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-blue-400 rounded-full inline-flex items-center justify-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                            <circle cx="12" cy="5" r="3"></circle>
+                            <path d="M12 22V8M5 12H2a10 10 0 0020 0h-3"></path>
+                        </svg>
+                    </div>
+                    <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                        <h2 class="font-medium title-font text-white mb-1 text-xl">Choose type</h2>
+                        <p class="leading-relaxed">Choose type of car as per your requirements, either SUV, Sedan or a Supercar.</p>
+                    </div>
                 </div>
-              </div>
-              <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
+            </div>
+            <div class="flex relative pb-10 sm:items-center md:w-2/3 mx-auto">
                 <div class="h-full w-6 absolute inset-0 flex items-center justify-center">
-                  <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+                    <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
                 </div>
                 <div class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm">4</div>
                 <div class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
-                  <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-blue-400 rounded-full inline-flex items-center justify-center">
-                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
-                      <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-                      <circle cx="12" cy="7" r="4"></circle>
-                    </svg>
-                  </div>
-                  <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
-                    <h2 class="font-medium title-font text-white mb-1 text-xl">Click on Submit and realx</h2>
-                    <p class="leading-relaxed">We'll choose the best car for you.</p>
-                  </div>
+                    <div class="flex-shrink-0 w-24 h-24 bg-gray-800 text-blue-400 rounded-full inline-flex items-center justify-center">
+                        <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12" viewBox="0 0 24 24">
+                            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </div>
+                    <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
+                        <h2 class="font-medium title-font text-white mb-1 text-xl">Click on Submit and realx</h2>
+                        <p class="leading-relaxed">We'll choose the best car for you.</p>
+                    </div>
                 </div>
-              </div>
             </div>
-          </section>
+        </div>
+    </section>
 
-          <footer class="text-gray-400 bg-gray-900 body-font">
-            <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col lg:w-2/6">
-              <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+    <footer class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col lg:w-2/6">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
                 <img src="img/icon.svg" class="w-10 h-10 text-white p-1/2 bg-blue-500 rounded-full">
                 <span class="ml-3 text-xl">Whichcar</span>
-              </a>
-              <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2022 Whichcar —
+            </a>
+            <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">
+                © 2022 Whichcar —
                 <a href="#" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">All rights reserved.</a>
-              </p>
-            </div>
-          </footer>
+            </p>
+        </div>
+    </footer>
 
-    </body>
+</body>
 </html>
