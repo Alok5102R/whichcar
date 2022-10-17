@@ -38,6 +38,7 @@ function myFunction() {
     let resultPrice = [];
     let j = 0;
     let t = "";
+    let cl = "";
     for(let i=0; i<obj.obj1.length; i++)
     {
         let clr = 0;
@@ -50,10 +51,11 @@ function myFunction() {
                 if(obj.obj1[i].colour[k]==Colour){
                     clr = 1;
                 }
+                cl = cl + obj.obj1[i].colour[k].substring(obj.obj1[i].colour[k].length-1,1) + " ";
             }
             if(clr==1){
                 resultCar[j] = obj.obj1[i]["car"];
-                resultPrice[j] = obj.obj1[i]["price"];
+                resultPrice[j] = obj.obj1[i]["price"] + " lacs " + " | " + obj.obj1[i].colr;
                 j = j+1;
             }
         }
@@ -64,9 +66,9 @@ function myFunction() {
 
     for(let i=0; i<resultCar.length-1; i++)
     {
-        t = t + resultCar[i] + " : Rs. " + resultPrice[i] + " lacs\n";
+        t = t + resultCar[i] + " : Rs. " + resultPrice[i] + "\n";
     }
-    t = t + resultCar[resultCar.length-1] + " : Rs. " + resultPrice[resultCar.length-1] + " lacs.";
+    t = t + resultCar[resultCar.length-1] + " : Rs. " + resultPrice[resultCar.length-1];
 
     document.querySelector('#demo').textContent = t;
 }
