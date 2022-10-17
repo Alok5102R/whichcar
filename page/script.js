@@ -3,11 +3,11 @@ function getFilteredCars() {
   var tPrice = document.getElementById('tPrice').value;
 
   var colorDrpDwn = document.getElementById('Colour');
-  var color = d.options[colorDrpDwn.selectedIndex].text;
+  var color = colorDrpDwn.options[colorDrpDwn.selectedIndex].text;
 
   var typesDrpDwn = document.getElementById('Types');
 
-  var type = e.options[typesDrpDwn.selectedIndex].text;
+  var type = typesDrpDwn.options[typesDrpDwn.selectedIndex].text;
 
   var cars = [
     {
