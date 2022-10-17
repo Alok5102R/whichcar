@@ -1,29 +1,37 @@
-body{
+body {
     animation: fade-in .5s forwards;
 }
 
-.whichcar-landing-template{
+.whichcar-landing-template {
     animation: slide-in-up 1s forwards;
 }
-.whichcar-landing-template-main{
+
+.whichcar-landing-template-main {
     animation: slide-in-side 2s forwards;
 }
+
 @keyframes fade-in {
-    from{
+    from {
         opacity: 0;
-    }to{
-         opacity: 1;
-     }
+    }
+
+    to {
+        opacity: 1;
+    }
 }
-@keyframes slide-in-up{
-    from{
+
+@keyframes slide-in-up {
+    from {
         opacity: 0;
         transform: translate(0, 100%);
-    }to{
-         opacity: 1;
-         transform: translate(0,0);
-     }
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(0,0);
+    }
 }
+
 @keyframes slide-in-side {
     from {
         opacity: 0;
