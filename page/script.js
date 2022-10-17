@@ -18,26 +18,26 @@ function getFilteredCars() {
       price: 4.7,
     },
     {
-      car: 'Maruti',
-      colour: ['Red 🔴', 'Blue 🔵'],
-      colr: '🔴 🔵 ⚫ ⚪',
-      type: 'SUV',
-      price: 18,
-    },
-    {
       car: 'H City',
       colour: ['Red 🔴', 'Blue 🔵', 'Black ⚫'],
       colr: '🔴 🔵 ⚫ ⚪',
       type: 'SUV',
       price: 12,
     },
+    {
+      car: 'Maruti',
+      colour: ['Red 🔴', 'Blue 🔵'],
+      colr: '🔴 🔵 ⚫ ⚪',
+      type: 'SUV',
+      price: 18,
+    }
+    
   ];
 
   let resultCar = [];
   let resultPrice = [];
   let j = 0;
-  let t = '';
-  let cl = '';
+  let selectedCars = '';
   for (let i = 0; i < cars.length; i++) {
     let clr = 0;
 
@@ -50,10 +50,6 @@ function getFilteredCars() {
         if (cars[i].colour[k] == color) {
           clr = 1;
         }
-        cl =
-          cl +
-          cars[i].colour[k].substring(cars[i].colour[k].length - 1, 1) +
-          ' ';
       }
       if (clr == 1) {
         resultCar[j] = cars[i]['car'];
@@ -64,13 +60,13 @@ function getFilteredCars() {
   }
 
   for (let i = 0; i < resultCar.length - 1; i++) {
-    t = t + resultCar[i] + ' : Rs. ' + resultPrice[i] + '\n';
+    selectedCars = selectedCars + resultCar[i] + ' : Rs. ' + resultPrice[i] + '\n';
   }
-  t =
-    t +
+  selectedCars =
+  selectedCars +
     resultCar[resultCar.length - 1] +
     ' : Rs. ' +
     resultPrice[resultCar.length - 1];
 
-  document.querySelector('#demo').textContent = t;
+  document.querySelector('#demo').textContent = selectedCars;
 }
