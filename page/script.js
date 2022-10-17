@@ -1,5 +1,6 @@
 function myFunction() {
-    var Price = document.getElementById("Price").value;
+    var fPrice = document.getElementById("fPrice").value;
+    var tPrice = document.getElementById("tPrice").value;
 
     var d = document.getElementById("Colour");
     var Colour = d.options[d.selectedIndex].text;
@@ -44,7 +45,7 @@ function myFunction() {
         
         
 
-        if(obj.obj1[i]["price"]<=Price && obj.obj1[i]["type"]==Types){
+        if((obj.obj1[i]["price"]>=fPrice && obj.obj1[i]["price"]<=tPrice) && obj.obj1[i]["type"]==Types){
             for(let k=0; k<obj.obj1[i].colour.length; k++)
             {
                 if(obj.obj1[i].colour[k]==Colour){
