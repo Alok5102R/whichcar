@@ -11,14 +11,23 @@ function myFunction() {
     var obj = {
         "obj1": [
             {
+                "car" : "Maruti S-Presso (Petrol)",
+                "colour" : ["Red 🔴","Blue 🔵","Black ⚫","White ⚪"],
+                "colr" : "🔴 🔵 ⚫ ⚪",
+                "type" : "SUV",
+                "price" : 4.7
+            },
+            {
                 "car" : "Maruti",
-                "colour" : ["Red","Blue"],
+                "colour" : ["Red 🔴","Blue 🔵"],
+                "colr" : "🔴 🔵 ⚫ ⚪",
                 "type" : "SUV",
                 "price" : 18
             },
             {
                 "car" : "H City",
-                "colour" : ["Red","Blue","Black"],
+                "colour" : ["Red 🔴","Blue 🔵","Black ⚫"],
+                "colr" : "🔴 🔵 ⚫ ⚪",
                 "type" : "SUV",
                 "price" : 12
             }
