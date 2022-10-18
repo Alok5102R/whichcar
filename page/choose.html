@@ -6,13 +6,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="../img/icon.svg" class="w-10 h-10 text-white p-1/2 bg-blue-500 rounded-full">
+        <link rel="stylesheet" href="/Styles/style.css">
         <script src="../page/script.js"></script>
     </head>
     <body class="bg-gray-900">
         <header class="text-gray-400 body-font">
             <div class="container mx-auto flex flex-wrap p-5 flex-row items-center justify-between">
               <a href="../index.html" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                <img src="../img/icon.svg" class="w-10 h-10 text-white p-1/2 bg-blue-500 rounded-full">
+                <img src="../img/icon.svg" class="w-10 h-10 text-white p-1/2 bg-blue-500 rounded-full" id="img-scale">
                 <span class="ml-3 text-xl">whichcar</span>
               </a>
               <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
@@ -29,27 +30,27 @@
             <form>
             <div class="container px-5 py-24 mx-auto">
               <div class="flex flex-col text-center w-full mb-12">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Check Car</h1>
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white" id="sp-text">Check Car</h1>
               </div>
               <div class="lg:w-1/2 md:w-2/3 mx-auto">
                 <div class="flex flex-wrap -m-2">
                   <div class="p-2 w-full">
                     <div class="relative">
                       <label for="fPrice" class="leading-7 text-sm text-gray-400">Price Range: From (in lacs)</label>
-                      <input type="number" name="fPrice" id="fPrice" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                      <input type="number" min="1" name="fPrice" id="fPrice" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                     </div>
                   </div>
                   <div class="p-2 w-full">
                     <div class="relative">
                       <label for="tPrice" class="leading-7 text-sm text-gray-400">Price Range: Till (in lacs)</label>
-                      <input type="number" name="tPrice" id="tPrice" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                      <input type="number" min="1" name="tPrice" id="tPrice" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                     </div>
                   </div>
                   <div class="p-2 w-full">
                     <div class="relative">
                       <label for="Seats" class="leading-7 text-sm text-gray-400">Minimum Seats</label>
-                      <select id="Seats" name="Seats" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                        <option value="0"></option>
+                      <select id="Seats" aria-placeholder="Default" name="Seats" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                        <option value="0">Default- 4 Seater</option>
                         <option value="1">2 Seater</option>
                         <option value="2">4 Seater</option>
                         <option value="3">5 Seater</option>
@@ -61,7 +62,7 @@
                     <div class="relative">
                       <label for="Types" class="leading-7 text-sm text-gray-400">Type</label>
                       <select id="Types" name="Types" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
-                        <option value="0"></option>
+                        <option value="0">ALL</option>
                         <option value="1">SUV</option>
                         <option value="2">Sedan</option>
                         <option value="3">Supercar</option>
@@ -90,7 +91,7 @@
             </div>
           </section>
 
-          <footer class="text-gray-400 bg-gray-900 body-font">
+          <footer class="text-gray-400 bg-gray-900 body-font" id="footer-div">
             <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col lg:w-2/6">
               <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
                 <img src="../img/icon.svg" class="w-10 h-10 text-white p-1/2 bg-blue-500 rounded-full">
