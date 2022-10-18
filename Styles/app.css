@@ -43,3 +43,20 @@ body {
         transform: translate(0,0);
     }
 }
+#sp-text{
+    font-weight: 800;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+
+}
+#sp-text:hover{
+    color: rgb(0, 140, 255);
+    cursor: none;
+}
+#img-scale:hover{
+    transform: scale(1.5);
+    border: 2px solid white;
+}
+#footer-div{
+    background-color: black;
+}
