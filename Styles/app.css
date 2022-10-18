@@ -1,45 +1,79 @@
 body {
-    animation: fade-in .5s forwards;
+  animation: fade-in 0.5s forwards;
 }
 
+.cont {
+  transform: translate(-50%, 50%);
+  /* border: 10px solid #fff; */
+}
 .whichcar-landing-template {
-    animation: slide-in-up 1s forwards;
+  animation: slide-in-up 1s forwards;
+}
+
+.image-cont {
+  animation: slide 12s infinite;
+}
+
+/* .but:hover {
+  background-color: aliceblue;
+  color: blue;
+} */
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  33% {
+    transform: translateX(-5%);
+  }
+  40% {
+    transform: translateX(-100%);
+  }
+  66% {
+    transform: translateX(-100%);
+  }
+  70% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
 }
 
 .whichcar-landing-template-main {
-    animation: slide-in-side 2s forwards;
+  animation: slide-in-side 2s forwards;
 }
 
 @keyframes fade-in {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slide-in-up {
-    from {
-        opacity: 0;
-        transform: translate(0, 100%);
-    }
+  from {
+    opacity: 0;
+    transform: translate(0, 100%);
+  }
 
-    to {
-        opacity: 1;
-        transform: translate(0,0);
-    }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }
 
 @keyframes slide-in-side {
-    from {
-        opacity: 0;
-        transform: translate(100%, 0);
-    }
+  from {
+    opacity: 0;
+    transform: translate(100%, 0);
+  }
 
-    to {
-        opacity: 1;
-        transform: translate(0,0);
-    }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }
