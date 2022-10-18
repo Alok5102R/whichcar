@@ -113,3 +113,7 @@ function getFilteredCars() {
 
   document.querySelector('#demo').textContent = selectedCars;
 }
+
+$("button").click(function () {
+  $("#myform").get(0).reset();
+});

@@ -77,3 +77,11 @@ body {
     transform: translate(0, 0);
   }
 }
+
+#btn:hover{
+  color: blue;
+  background-color: white;
+  transform: scale(1.09);
+  transition: 0.2s all linear;
+  box-shadow: black 2px 2px 13px;
+}
