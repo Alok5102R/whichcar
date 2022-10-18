@@ -2,8 +2,9 @@ function getFilteredCars() {
   var fPrice = document.getElementById('fPrice').value;
   var tPrice = document.getElementById('tPrice').value;
 
-  var colorDrpDwn = document.getElementById('Colour');
-  var color = colorDrpDwn.options[colorDrpDwn.selectedIndex].text;
+  var seatsDrpDwn = document.getElementById('Seats');
+  var minseats = seatsDrpDwn.options[seatsDrpDwn.selectedIndex].text;
+  minseats = minseats.substring(0,1);
 
   var typesDrpDwn = document.getElementById('Types');
 
@@ -12,70 +13,70 @@ function getFilteredCars() {
   var cars = [
     {
       car: 'Maruti Alto K10 (Petrol)',
-      colour: ['Red 🔴', 'Blue 🔵', 'Black ⚫', 'White ⚪, Brown 🟤'],
+      seat: 5,
       colr: '🔴 🔵 ⚫ ⚪ 🟤',
       type: 'Hatchback',
       price: 4,
     },
     {
       car: 'Maruti Suzuki Swift (Petrol)',
-      colour: ['Red 🔴', 'Blue 🔵', 'Black ⚫', 'White ⚪'],
+      seat: 5,
       colr: '🔴 🔵 ⚫ ⚪',
       type: 'Hatchback',
       price: 5.9,
     },
     {
       car: 'Tata Punch (Petrol)',
-      colour: ['Red 🔴', 'Blue 🔵', 'Black ⚫', 'White ⚪'],
+      seat: 5,
       colr: '🔴 🔵 ⚫ ⚪',
       type: 'SUV',
       price: 6,
     },
     {
       car: 'Mahindra Bolero (Petrol)',
-      colour: ['Red 🔴', 'Blue 🔵', 'Black ⚫', 'White ⚪'],
+      seat: 7,
       colr: '🔴 🔵 ⚫ ⚪',
       type: 'SUV',
       price: 10,
     },
     {
       car: 'Maruti Suzuki Baleno (Petrol)',
-      colour: ['Red 🔴', 'Blue 🔵', 'Black ⚫', 'White ⚪'],
+      seat: 5,
       colr: '🔴 🔵 ⚫ ⚪',
       type: 'Hatchback',
       price: 6.5,
     },
     {
       car: 'Maruti Brezza (Petrol)',
-      colour: ['Red 🔴', 'Blue 🔵', 'Black ⚫', 'White ⚪'],
+      seat: 5,
       colr: '🔴 🔵 ⚫ ⚪',
       type: 'SUV',
       price: 8,
     },
     {
       car: 'Maruti S-Presso (Petrol)',
-      colour: ['Red 🔴', 'Blue 🔵', 'Black ⚫', 'White ⚪'],
+      seat: 4,
       colr: '🔴 🔵 ⚫ ⚪',
       type: 'Hatchback',
       price: 4.7,
     },
     {
       car: 'Tata Nexon (Petrol)',
-      colour: ['Red 🔴', 'Blue 🔵', 'Black ⚫', 'White ⚪'],
+      seat: 5,
       colr: '🔴 🔵 ⚫ ⚪',
       type: 'SUV',
       price: 7.6,
     },
     {
       car: 'Honda City (Petrol)',
-      colour: ['Red 🔴', 'Blue 🔵', 'Black ⚫'],
+      seat: 5,
       colr: '🔴 🔵 ⚫ ⚪',
       type: 'Sedan',
       price: 12,
     },
     {
       car: 'Tata Safari (Petrol)',
-      colour: ['Red 🔴', 'Blue 🔵'],
+      seat: 6,
       colr: '🔴 🔵 ⚫ ⚪',
       type: 'SUV',
       price: 16,
@@ -88,24 +89,16 @@ function getFilteredCars() {
   let j = 0;
   let selectedCars = '';
   for (let i = 0; i < cars.length; i++) {
-    let clr = 0;
 
     if (
       cars[i]['price'] >= fPrice &&
       cars[i]['price'] <= tPrice &&
-      cars[i]['type'] == type
+      cars[i]['type'] == type &&
+      cars[i]['seat'] >= minseats 
     ) {
-      for (let k = 0; k < cars[i].colour.length; k++) {
-        if (cars[i].colour[k] == color) {
-          clr = 1;
-          break;
-        }
-      }
-      if (clr == 1) {
         resultCar[j] = cars[i]['car'];
         resultPrice[j] = cars[i]['price'] + ' lacs ' + ' | ' + cars[i].colr;
         j = j + 1;
-      }
     }
   }
 
