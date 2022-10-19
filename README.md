@@ -7,6 +7,8 @@ A website to help you decide best Car as per your requirements.
 
 Visit : [Whichcar](https://whichcar.epizy.com/)
 
+## Refer (Before Participating) : [Contributing guidlines](https://github.com/Alok5102R/whichcar/blob/main/CONTRIBUTING.md)
+
 Note : 
 - Please keep your code clean and formatted, avoid unnecessary files and dependencies.
 - Focus more on logical part than the presentation part.
