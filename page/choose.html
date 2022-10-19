@@ -6,7 +6,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="../img/icon.svg" class="w-10 h-10 text-white p-1/2 bg-blue-500 rounded-full">
-        <script src="../page/script.js"></script>
+        <link rel="stylesheet" href="../Styles/choose.css">
     </head>
     <body class="bg-gray-900">
         <header class="text-gray-400 body-font">
@@ -70,21 +70,16 @@
                       </select>
                     </div>
                   </div>
-                  <div class="p-2 w-full">
-                     <input type="button" value="Submit" onclick="getFilteredCars()" class="flex mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg" />
-                  </div>
-                  <div class="p-2 w-full">
-                    <div class="relative">
-                      <label for="demo" class="leading-7 text-sm text-gray-400">Car Suggestions</label>
-                      <textarea id="demo" disabled name="demo" class="w-full bg-gray-500 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-700 focus:ring-2 focus:ring-blue-900 h-32 text-base outline-none text-gray-100 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
-                    </div>
-                  </div>
+                  <div class="p-2 w-full flex justify-center">
+                    <input type="button" value="Submit" onclick="getFilteredCars()" class="flex mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg" />
+                    <button class="flex mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg" type="reset" onclick="resetFields()">Reset</button>
+                   </div>
                 </form> 
-                  <div class="p-2 w-full">
-                   <button  class="flex mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg">Reset</button>
+                <div class="p-2 w-full">
+                  <div class="relative" id="carList">
+                    <h5 class="leading-7 text-sm text-gray-400">Car Suggestions</h5>
                   </div>
-                  
-                  
+                </div>
                 </div>
               </div>
             </div>
@@ -101,6 +96,6 @@
             </p>
             </div>
           </footer>
-
+          <script src="../page/script.js"></script>
     </body>
 </html>
