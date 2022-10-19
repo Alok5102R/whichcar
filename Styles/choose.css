@@ -1,0 +1,10 @@
+#carList {
+    max-height: 220px;
+    overflow-y: auto;
+}
+
+.carLink {
+    width: 100%;
+    padding: 10px;
+    display: block;
+}
