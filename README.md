@@ -15,5 +15,6 @@ Note :
 - Please do not create pull request without approval as it'll result in merge conflicts.
 
 Do Starred and follow if you like the content.
-Thank you!!
+
+### Heartwarming thanks to all the contributors.
 
