@@ -16,7 +16,7 @@ Note :
 - Do fork the repository to work upon issues and be a contributor.
 - Please do not create pull request without approval as it'll result in merge conflicts.
 
-Do Starred and follow if you like the content.
+#### Do [Starred](https://github.com/Alok5102R) ⭐ and [Follow](https://github.com/Alok5102R) 👤 if you like the content.
 
-### Heartwarming thanks to all the contributors.
+### Heartwarming thanks to all the contributors !!
 
