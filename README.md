@@ -12,6 +12,7 @@ Note :
 - Focus more on logical part than the presentation part.
 - Currently this project don't require database connection.
 - Do fork the repository to work upon issues and be a contributor.
+- Please do not create pull request without approval as it'll result in merge conflicts.
 
 Do Starred and follow if you like the content.
 Thank you!!
