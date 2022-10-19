@@ -22,6 +22,15 @@ Add your achievements! What you did at this Hacktoberfest? Write it down, don't 
 5. Push to your fork and [submit a pull request](https://github.com/Alok5102R/whichcar/compare)
 6. Pat your self on the back and wait for your pull request to be reviewed and merged.
 
+## Points to focus before participating
+
+- Please keep your code clean and formatted, avoid unnecessary files and dependencies.
+- Focus more on logical part than the presentation part.
+- Currently this project don't require database connection.
+- Do fork the repository to work upon issues and be a contributor.
+- Please do not create pull request without approval as it'll result in merge conflicts.
+- Before creating pull request, do check previous approved pull requests. So that your code don't conflict with them.
+
 ## Resources
 
 - [How to Contribute to Open Source](https://opensource.guide/how-to-contribute/)
