@@ -95,9 +95,7 @@ function getFilteredCars() {
     
   ];
 
-  let resultCar = [];
-  let resultPrice = [];
-  let j = 0;
+ 
   let selectedCars = [];
   for (let i = 0; i < cars.length; i++) {
 
