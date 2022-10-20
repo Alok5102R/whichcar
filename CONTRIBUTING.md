@@ -6,7 +6,7 @@ _Welcome hackers it is really **awesome** have you here! Before start contributi
 
 Add your achievements! What you did at this Hacktoberfest? Write it down, don't just do and forget. Include a file named with your username in contributions folder and add link to it in the readme so that others may have a quick look of your works.
 
-#### Contributors -> [All Contributors](https://github.com/Alok5102R/whichcar/graphs/contributors)
+### Contributors -> [All Contributors](https://github.com/Alok5102R/whichcar/graphs/contributors)
 
 ## Submitting a pull request
 
