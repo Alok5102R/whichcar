@@ -1,7 +1,7 @@
 let cars = {};
 
 // ==== Function to fetch data from json ====
-fetch("./cardata.json")
+fetch("../utils/cardata.json")
   .then(function(resp) {
     return resp.json();
   })
