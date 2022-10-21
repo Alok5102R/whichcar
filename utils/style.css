@@ -1,7 +1,13 @@
 body {
   animation: fade-in 0.5s forwards;
+  
+}
+
+html, body {
+  max-width: 100%;
   overflow-x: hidden;
 }
+
 
 .cont {
   transform: translate(-50%, 50%);
