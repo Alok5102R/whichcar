@@ -86,6 +86,7 @@ body {
   box-shadow: black 2px 2px 13px;
 }
 
+/* ======= For choose.html ======= */
 #carList {
     max-height: 220px;
     overflow-y: auto;
@@ -96,3 +97,4 @@ body {
     padding: 10px;
     display: block;
 }
+/* ======= For choose.html ======= */
