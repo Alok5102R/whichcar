@@ -22,6 +22,9 @@ Add your achievements! What you did at this Hacktoberfest? Write it down, don't 
 ## Points to focus before participating
 
 - Please keep your code clean and formatted, avoid unnecessary files and dependencies.
+- Do not create, already created file extensions.
+- Put all non-html files(except image) in "utils" directory.
+- Do not include VS code files.
 - Focus more on logical part than the presentation part.
 - Currently this project don't require database connection.
 - Do fork the repository to work upon issues and be a contributor.
