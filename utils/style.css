@@ -104,4 +104,8 @@ html, body {
     padding: 10px;
     display: block;
 }
+
+.suggestions {
+  display: none;
+}
 /* ======= For choose.html ======= */
