@@ -1,5 +1,6 @@
 body {
   animation: fade-in 0.5s forwards;
+  overflow-x: hidden;
 }
 
 .cont {
@@ -96,5 +97,9 @@ body {
     width: 100%;
     padding: 10px;
     display: block;
+}
+
+.suggestions {
+  display: none;
 }
 /* ======= For choose.html ======= */

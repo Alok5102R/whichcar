@@ -1,3 +1,6 @@
+let carListContainer = document.getElementById('carList');
+let suggestionHeading = document.getElementsByClassName('suggestions')[0];
+
 let cars = {};
 
 // ==== Function to fetch data from json ====
@@ -6,14 +9,12 @@ fetch("../utils/cardata.json")
     return resp.json();
   })
   .then(function(data){
-    //console.log(data[0]["price"]);
     cars = data;
   });
 // ==== Function to fetch data from json ====
 
 
 function getFilteredCars() {
-  let carListContainer = document.getElementById('carList');
   var fPrice = document.getElementById('fPrice').value;
   var tPrice = document.getElementById('tPrice').value;
 
@@ -41,6 +42,10 @@ function getFilteredCars() {
         selectedCars.push(carObj);
     }
   }
+  if(selectedCars.length > 0) {
+    suggestionHeading.style.display = 'block';
+    carListContainer.innerHTML = '';
+  }
   for(let i = 0; i < selectedCars.length; i++) {
     let carLink = document.createElement('a');
     carLink.innerText = selectedCars[i].car;
@@ -52,6 +57,7 @@ function getFilteredCars() {
 }
 
 function resetFields() {
+  suggestionHeading.style.display = 'none';
   carListContainer.innerHTML = '';
 }
 
