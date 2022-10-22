@@ -27,7 +27,7 @@ Visit : [Whichcar](https://whichcar.epizy.com/)
 - Do fork the repository to work upon issues and be a contributor.
 - Please do not create pull request without approval as it'll result in merge conflicts.
 
-### Do [Starred](https://github.com/Alok5102R) ⭐ and [Follow](https://github.com/Alok5102R) 👤 if you like the content.
+### Do [Starred](https://github.com/Alok5102R/whichcar) ⭐ and [Follow](https://github.com/Alok5102R) 👤 if you like the content.
 
 ### Heartwarming thanks to all the contributors !!
 <a href="https://github.com/Alok5102R/whichcar/graphs/contributors">
