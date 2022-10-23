@@ -15,6 +15,7 @@ fetch("../utils/cardata.json")
 
 
 function getFilteredCars() {
+  resetFields();
   var fPrice = document.getElementById('fPrice').value;
   var tPrice = document.getElementById('tPrice').value;
 
