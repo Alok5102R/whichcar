@@ -80,35 +80,35 @@
     "link": ""
   },
   {
-    "car": "Tesla Model S",
-    "seat": 4,
-    "colr": "🔴 🔵 ⚫ ⚪",
-    "type": "Super car",
-    "price": 16,
-    "link": "https://www.tesla.com/models"
-  },
-  {
-    "car": "Tesla Model 3",
-    "seat": 4,
-    "colr": "🔴 🔵 ⚫ ⚪",
-    "type": "Super car",
-    "price": 16,
-    "link": "https://www.tesla.com/model3"
-  },
-  {
-    "car": "Tesla Model X",
-    "seat": 4,
-    "colr": "🔴 🔵 ⚫ ⚪",
-    "type": "Super car",
-    "price": 16,
-    "link": "https://www.tesla.com/modelx"
-  },
-  {
-    "car": "Tesla Model Y",
+    "car": "Tesla Model S Electric",
     "seat": 5,
     "colr": "🔴 🔵 ⚫ ⚪",
     "type": "Super car",
-    "price": 16,
+    "price": 86,
+    "link": "https://www.tesla.com/models"
+  },
+  {
+    "car": "Tesla Model 3 Electric",
+    "seat": 5,
+    "colr": "🔴 🔵 ⚫ ⚪",
+    "type": "Super car",
+    "price": 38,
+    "link": "https://www.tesla.com/model3"
+  },
+  {
+    "car": "Tesla Model X Electric",
+    "seat": 7,
+    "colr": "🔴 🔵 ⚫ ⚪",
+    "type": "Super car",
+    "price": 99,
+    "link": "https://www.tesla.com/modelx"
+  },
+  {
+    "car": "Tesla Model Y Long Range(Electric)",
+    "seat": 7,
+    "colr": "🔴 🔵 ⚫ ⚪",
+    "type": "Super car",
+    "price": 54,
     "link": "https://www.tesla.com/modely"
   }
   
