@@ -37,7 +37,7 @@
     "colr": "🔴 🔵 ⚫ ⚪",
     "type": "Hatchback",
     "price": 6.5,
-    "link": ""
+    "link": "https://www.nexaexperience.com/baleno/"
   },
   {
     "car": "Maruti Brezza (Petrol)",
@@ -45,7 +45,7 @@
     "colr": "🔴 🔵 ⚫ ⚪",
     "type": "SUV",
     "price": 8,
-    "link": ""
+    "link": "https://www.marutisuzuki.com/brezza?form=testdrive"
   },
   {
     "car": "Maruti S-Presso (Petrol)",
@@ -53,7 +53,7 @@
     "colr": "🔴 🔵 ⚫ ⚪",
     "type": "Hatchback",
     "price": 4.7,
-    "link": ""
+    "link": "https://www.marutisuzuki.com/s-presso"
   },
   {
     "car": "Tata Nexon (Petrol)",
@@ -61,7 +61,7 @@
     "colr": "🔴 🔵 ⚫ ⚪",
     "type": "SUV",
     "price": 7.6,
-    "link": ""
+    "link": "https://cars.tatamotors.com/suv/nexon"
   },
   {
     "car": "Honda City (Petrol)",
@@ -69,7 +69,7 @@
     "colr": "🔴 🔵 ⚫ ⚪",
     "type": "Sedan",
     "price": 12,
-    "link": ""
+    "link": "https://www.hondacarindia.com/honda-city"
   },
   {
     "car": "Tata Safari (Petrol)",
@@ -77,7 +77,7 @@
     "colr": "🔴 🔵 ⚫ ⚪",
     "type": "SUV",
     "price": 16,
-    "link": ""
+    "link": "https://cars.tatamotors.com/suv/safari"
   },
   {
     "car": "Tesla Model 3 Electric",
@@ -110,5 +110,109 @@
     "type": "Supercar",
     "price": 99,
     "link": "https://www.tesla.com/modelx"
-  } 
+  },
+  {
+    "car": "Hyundai i20",
+    "seat": 5,
+    "colr": "🔴 🔵 ⚫ ⚪",
+    "type": "Hatchback",
+    "price": 10.5,
+    "link": "https://www.hyundai.com/in/en/find-a-car/i20/highlights"
+  },
+  {
+    "car": "Honda Jazz",
+    "seat": 5,
+    "colr": "🔴 🔵 ⚫ ⚪",
+    "type": "Hatchback",
+    "price": 10,
+    "link": "https://www.hondacarindia.com/honda-jazz"
+  },
+  {
+    "car": "Hyundai i20 N Line",
+    "seat": 5,
+    "colr": "🔴 🔵 ⚫ ⚪",
+    "type": "Hatchback",
+    "price": 11,
+    "link": "https://www.hyundai.com/in/en/find-a-car/i20-n-line/highlights"
+  },
+  {
+    "car": "Hyundai Verna",
+    "seat": 5,
+    "colr": "🔴 🔵 ⚫ ⚪",
+    "type": "Sedan",
+    "price": 12,
+    "link": "https://www.hyundai.com/in/en/find-a-car/verna/highlights"
+  },
+  {
+    "car": "Skoda Slavia",
+    "seat": 5,
+    "colr": "🔴 🔵 ⚫ ⚪",
+    "type": "Sedan",
+    "price": 13,
+    "link": "https://www.skoda-auto.co.in/models/slavia/slavia"
+  },
+  {
+    "car": "Volkswagen Virtus",
+    "seat": 5,
+    "colr": "🔴 🔵 ⚫ ⚪",
+    "type": "Sedan",
+    "price": 14,
+    "link": "https://www.volkswagen.co.in/en/models/new-virtus.html"
+  },
+  {
+    "car": "Maruti Suzuki Ciaz",
+    "seat": 5,
+    "colr": "🔴 🔵 ⚫ ⚪",
+    "type": "Sedan",
+    "price": 10,
+    "link": "https://www.nexaexperience.com/ciaz"
+  },
+  {
+    "car": "Mahindra XUV300 Turbo Sport",
+    "seat": 5,
+    "colr": "🔴 🔵 ⚫ ⚪",
+    "type": "Suv",
+    "price": 11,
+    "link": "https://auto.mahindra.com/suv/xuv300"
+  },
+  {
+    "car": "Hyundai Venue N Line",
+    "seat": 5,
+    "colr": "🔴 🔵 ⚫ ⚪",
+    "type": "Suv",
+    "price": 13,
+    "link": "https://www.hyundai.com/in/en/find-a-car/venue-n-line/highlights.html"
+  },
+  {
+    "car": "Mahindra XUV700",
+    "seat": 5,
+    "colr": "🔴 🔵 ⚫ ⚪",
+    "type": "Suv",
+    "price": 15,
+    "link": "https://auto.mahindra.com/suv/xuv700"
+  },
+  {
+    "car": "Hyundai Creta",
+    "seat": 5,
+    "colr": "🔴 🔵 ⚫ ⚪",
+    "type": "Suv",
+    "price": 13,
+    "link": "https://www.hyundai.com/in/en/find-a-car/creta/highlights"
+  },
+  {
+    "car": "Mahindra Thar",
+    "seat": 4,
+    "colr": "🔴 🔵 ⚫ ⚪",
+    "type": "Suv",
+    "price": 14,
+    "link": "https://auto.mahindra.com/suv/thar"
+  },
+  {
+    "car": "MG Hector",
+    "seat": 5,
+    "colr": "🔴 🔵 ⚫ ⚪",
+    "type": "Suv",
+    "price": 15,
+    "link": "https://www.mgmotor.co.in/vehicles/mghector"
+  }
 ]
