@@ -78,6 +78,38 @@
     "type": "SUV",
     "price": 16,
     "link": ""
+  },
+  {
+    "car": "Tesla Model S",
+    "seat": 4,
+    "colr": "🔴 🔵 ⚫ ⚪",
+    "type": "Super car",
+    "price": 16,
+    "link": "https://www.tesla.com/models"
+  },
+  {
+    "car": "Tesla Model 3",
+    "seat": 4,
+    "colr": "🔴 🔵 ⚫ ⚪",
+    "type": "Super car",
+    "price": 16,
+    "link": "https://www.tesla.com/model3"
+  },
+  {
+    "car": "Tesla Model X",
+    "seat": 4,
+    "colr": "🔴 🔵 ⚫ ⚪",
+    "type": "Super car",
+    "price": 16,
+    "link": "https://www.tesla.com/modelx"
+  },
+  {
+    "car": "Tesla Model Y",
+    "seat": 5,
+    "colr": "🔴 🔵 ⚫ ⚪",
+    "type": "Super car",
+    "price": 16,
+    "link": "https://www.tesla.com/modely"
   }
   
 ]
