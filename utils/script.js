@@ -1,5 +1,6 @@
 let carListContainer = document.getElementById('carList');
 let suggestionHeading = document.getElementsByClassName('suggestions')[0];
+let noresult_textContainer = document.getElementsByClassName('noresult_text')[0];
 
 let cars = {};
 
@@ -46,6 +47,14 @@ function getFilteredCars() {
   if(selectedCars.length > 0) {
     suggestionHeading.style.display = 'block';
     carListContainer.innerHTML = '';
+    noresult_textContainer.style.display = 'none';
+  }
+  else{
+    noresult_textContainer.style.display = 'block';
+    noresult_textContainer.classList.remove('noresult_text');
+    void noresult_textContainer.offsetWidth;
+    noresult_textContainer.classList.add('noresult_text');
+    console.log("trigered!");
   }
   for(let i = 0; i < selectedCars.length; i++) {
     let carLink = document.createElement('a');
