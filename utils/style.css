@@ -108,4 +108,9 @@ html, body {
 .suggestions {
   display: none;
 }
+
+.logo{
+  background-color: white;
+  border-radius: 50%;
+}
 /* ======= For choose.html ======= */
