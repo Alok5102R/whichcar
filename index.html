@@ -11,6 +11,7 @@
       class="w-10 h-10 text-white p-1/2 bg-blue-500 rounded-full"
     />
     <link rel="stylesheet" href="utils/style.css" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
   <body class="bg-gray-900">
     <header class="text-gray-400 body-font sticky top-0 z-50">
@@ -20,10 +21,11 @@
         <a
           class="flex title-font font-medium items-center text-gray-900 md:mb-0"
         >
-          <a href="#"><img
-            src="img/icon.svg"
-            class="w-10 h-10 text-white p-1/2 bg-blue-500 rounded-full"
-          /></a>
+          <a href="#">
+            <lottie-player class="logo" src="img/car-logo.json" 
+            speed="1" style="width: 100px; height: 100px;" loop autoplay>
+          </lottie-player>
+          </a>
           <span class="ml-3 text-xl"></span>
         </a>
         <nav
