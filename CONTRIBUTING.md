@@ -29,7 +29,11 @@ Add your achievements! What you did at this Hacktoberfest? Write it down, don't 
 - Currently this project don't require database connection.
 - Do fork the repository to work upon issues and be a contributor.
 - Please do not create pull request without approval as it'll result in merge conflicts.
-- Before creating pull request, do check previous approved pull requests. So that your code don't conflict with them.
+- Before creating pull request, do check previous approved pull requests. So that your code don't conflict with them. 
+ 
+ ## Repository Description 
+ - Each project must have a description of the project. The description should give a gist of the project and what the project does.
+- The description should not be more than two lines.
 
 ## Resources
 
