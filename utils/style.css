@@ -21,10 +21,34 @@ html, body {
   animation: slide 12s infinite;
 }
 
+.noresult_text{
+  display: none;
+  font-size: 22px;
+  text-align: center;
+  color: lemonchiffon;
+  animation: shake 0.2s 2;
+}
+
 /* .but:hover {
   background-color: aliceblue;
   color: blue;
 } */
+
+@keyframes shake{
+  0%{
+    transform: translateX(0)
+  }
+  25%{
+    transform: translateX(12px);
+  }
+    
+  50%{
+    transform: translateX(-12px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
 
 @keyframes slide {
   0% {
