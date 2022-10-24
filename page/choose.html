@@ -7,13 +7,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" href="../img/icon.svg" class="w-10 h-10 text-white p-1/2 bg-blue-500 rounded-full">
         <link rel="stylesheet" href="../utils/style.css">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     </head>
     <body class=" bg-gray-900 ">
         <header class="   body-font sticky top-0 z-50">
             <div class="container mx-auto flex flex-wrap p-5 flex-row items-center justify-between">
-              <a href="../index.html" class="flex title-font font-medium items-center   mb-4 md:mb-0">
-                <img src="../img/icon.svg" class="w-10 h-10 text-white p-1/2 bg-blue-500 rounded-full">
-                <span class="ml-3 text-xl"></span>
+              <a href="../index.html">
+                <lottie-player class="logo" src="../img/car-logo.json" 
+                  speed="1" style="width: 60px; height: '6'0px;" loop autoplay>
+                </lottie-player>
               </a>
               <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
                 <a class="mr-5 hover:text-gray-300"></a>
@@ -93,6 +95,8 @@
                   <div class="relative">
                     
                   </div>
+
+                  <h2 class="noresult_text">Sorry no Cars found in this Category !</h2>
                   <div class="relative" id="carList">
                     <h5 class="leading-7 text-sm   "></h5>
                   </div>
