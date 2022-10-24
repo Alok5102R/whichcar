@@ -18,15 +18,15 @@ fetch("../utils/cardata.json")
 function getFilteredCars() {
   resetFields();
   var fPrice = document.getElementById('fPrice').value;
-  var tPrice = document.getElementById('tPrice').value;
+  var tPrice = document.getElementById('tPrice').value || 10;
 
   var seatsDrpDwn = document.getElementById('Seats');
-  var minseats = seatsDrpDwn.options[seatsDrpDwn.selectedIndex].text;
-  minseats = minseats.substring(0,1);
+  var minseats = seatsDrpDwn.options[seatsDrpDwn.selectedIndex].value;
 
   var typesDrpDwn = document.getElementById('Types');
-
-  var type = typesDrpDwn.options[typesDrpDwn.selectedIndex].text;
+  var type = '';
+  if (typesDrpDwn.value)
+    type = typesDrpDwn.options[typesDrpDwn.selectedIndex].text;
 
   let selectedCars = [];
   for (let i = 0; i < cars.length; i++) {
@@ -34,13 +34,16 @@ function getFilteredCars() {
     if (
       cars[i]['price'] >= fPrice &&
       cars[i]['price'] <= tPrice &&
-      cars[i]['type'] == type &&
+      (cars[i]['type'] == type || !type) &&
       cars[i]['seat'] >= minseats 
     ) {
         let carObj = {
           car: cars[i]['car'] + ' : Rs. ' + cars[i]['price'] + ' lacs ' + ' | ' + cars[i].colr,
           link: cars[i]['link']
         };
+        if (!type || minseats == 0) carObj.car += ' |\n';
+        if (!type) carObj.car += ' | ' + cars[i].type;
+        if (minseats == 0) carObj.car += ' | ' + cars[i].seat + ' Seater';
         selectedCars.push(carObj);
     }
   }
