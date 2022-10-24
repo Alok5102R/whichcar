@@ -8,10 +8,10 @@
         <link rel="icon" href="../img/icon.svg" class="w-10 h-10 text-white p-1/2 bg-blue-500 rounded-full">
         <link rel="stylesheet" href="../utils/style.css">
     </head>
-    <body class="bg-gray-900">
-        <header class="text-gray-400 body-font sticky top-0 z-50">
+    <body class=" bg-gray-900 ">
+        <header class="   body-font sticky top-0 z-50">
             <div class="container mx-auto flex flex-wrap p-5 flex-row items-center justify-between">
-              <a href="../index.html" class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+              <a href="../index.html" class="flex title-font font-medium items-center   mb-4 md:mb-0">
                 <img src="../img/icon.svg" class="w-10 h-10 text-white p-1/2 bg-blue-500 rounded-full">
                 <span class="ml-3 text-xl"></span>
               </a>
@@ -21,34 +21,47 @@
                 <a class="mr-5 hover:text-gray-300"></a>
                 <a class="mr-5 hover:text-gray-300"></a>
               </nav>
-              <button class="inline-flex items-center text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-600 rounded text-base mt-4 md:mt-0"><a href="../index.html">Whichcar</a></button>
+           
+           
+
+
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="label">
+          <i class="fas fa-moon"></i>
+          <i class='fas fa-sun'></i>
+          <div class='ball'>
+        </label>
+           
+           
+           
+           
             </div>
           </header>
 
-          <section class="text-gray-400 bg-gray-900 body-font relative">
+          <section class=" body-font relative">
             <form id="myform" method="post">
             <div class="container px-5 py-24 mx-auto">
               <div class="flex flex-col text-center w-full mb-12">
-                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Check Car</h1>
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4">Check Car</h1>
               </div>
               <div class="lg:w-1/2 md:w-2/3 mx-auto">
-                <div class="flex flex-wrap -m-2">
+                <div class="flex flex-wrap -m-2 text-black">
                   <div class="p-2 w-full">
                     <div class="relative">
-                      <label for="fPrice" class="leading-7 text-sm text-gray-400">Price Range: From (in lacs)</label>
-                      <input type="number" min="0" placeholder="1" name="fPrice" id="fPrice" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                      <label for="fPrice" class="leading-7 text-sm labelfor">Price Range: From (in lacs)</label>
+                      <input type="number" min="0" placeholder="1" name="fPrice" id="fPrice" class="w-full bg-opacity-40 rounded border focus:border-blue-500  focus:ring-2 focus:ring-blue-900 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                     </div>
                   </div>
                   <div class="p-2 w-full">
                     <div class="relative">
-                      <label for="tPrice" class="leading-7 text-sm text-gray-400">Price Range: Till (in lacs)</label>
-                      <input type="number" min="0" placeholder="1" name="tPrice" id="tPrice" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                      <label for="tPrice" class="leading-7 text-sm  labelfor ">Price Range: Till (in lacs)</label>
+                      <input type="number" min="0" placeholder="1" name="tPrice" id="tPrice" class="w-full bg-opacity-40 rounded border focus:border-blue-500  focus:ring-2 focus:ring-blue-900 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                     </div>
                   </div>
                   <div class="p-2 w-full">
                     <div class="relative">
-                      <label for="Seats" class="leading-7 text-sm text-gray-400">Minimum Seats</label>
-                      <select id="Seats" name="Seats" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                      <label for="Seats" class="leading-7 text-sm  labelfor ">Minimum Seats</label>
+                      <select id="Seats" name="Seats" class="w-full    bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:   focus:ring-2 focus:ring-blue-900 text-base outline-none   py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                         <option value="" disabled selected hidden>Please Choose number of seats</option>
                         <option value="1">2 Seater</option>
                         <option value="2">4 Seater</option>
@@ -59,8 +72,8 @@
                   </div>
                   <div class="p-2 w-full">
                     <div class="relative">
-                      <label for="Types" class="leading-7 text-sm text-gray-400">Type</label>
-                      <select id="Types" name="Types" class="w-full bg-gray-800 bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:bg-gray-900 focus:ring-2 focus:ring-blue-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                      <label for="Types" class="leading-7 text-sm  labelfor ">Type</label>
+                      <select id="Types" name="Types" class="w-full    bg-opacity-40 rounded border border-gray-700 focus:border-blue-500 focus:   focus:ring-2 focus:ring-blue-900 text-base outline-none   py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
                         <option value="" disabled selected hidden>Please Choose type of Car</option>
                         <option value="1">SUV</option>
                         <option value="2">Sedan</option>
@@ -76,12 +89,12 @@
                    </div>
                 </form> 
                 <div class="p-2 w-full">
-                  <h5 class="suggestions leading-7 text-sm text-gray-400">Car Suggestions:</h5>
+                  <h5 class="suggestions leading-7 text-sm   ">Car Suggestions:</h5>
                   <div class="relative">
                     
                   </div>
                   <div class="relative" id="carList">
-                    <h5 class="leading-7 text-sm text-gray-400"></h5>
+                    <h5 class="leading-7 text-sm   "></h5>
                   </div>
                 </div>
                 </div>
@@ -89,17 +102,20 @@
             </div>
           </section>
 
-          <footer class="text-gray-400 bg-gray-900 body-font">
+          <footer class=" body-font">
             <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col lg:w-2/6 justify-center">
               <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
                 <img src="../img/icon.svg" class="w-10 h-10 text-white p-1/2 bg-blue-500 rounded-full">
                 <span class="ml-3 text-xl">Whichcar</span>
               </a>
-              <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">
+              <p class="text-sm    sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">
                 © 2022 Whichcar — All rights reserved.
             </p>
             </div>
           </footer>
+          <!-- For moon and sun icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
           <script src="../utils/script.js"></script>
     </body>
 </html>

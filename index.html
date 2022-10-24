@@ -12,15 +12,15 @@
     />
     <link rel="stylesheet" href="utils/style.css" />
   </head>
-  <body class="bg-gray-900">
-    <header class="text-gray-400 body-font sticky top-0 z-50">
+  <body class="bg-gray-900"> 
+    <header class="  body-font sticky top-0 z-50">
       <div
         class="container mx-auto flex flex-wrap p-5 flex-row items-center justify-between whichcar-landing-template"
       >
         <a
           class="flex title-font font-medium items-center text-gray-900 md:mb-0"
         >
-          <a href="#"><img
+          <a href="/"><img
             src="img/icon.svg"
             class="w-10 h-10 text-white p-1/2 bg-blue-500 rounded-full"
           /></a>
@@ -34,18 +34,30 @@
           <a class="mr-5 hover:text-gray-300"></a>
           <a class="mr-5 hover:text-gray-300"></a>
         </nav>
-        <button
-          class="inline-flex items-center text-white bg-blue-500 border-0 py-1 px-3 focus:outline-none hover:bg-blue-600 rounded text-base md:mt-0"
-        >
-          Whichcar
-        </button>
+
+
+
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="label">
+          <i class="fas fa-moon"></i>
+          <i class='fas fa-sun'></i>
+          <div class='ball'>
+        </label>
+
+
+
       </div>
     </header>
 
-    <section class="text-gray-400 bg-gray-900 body-font">
+
+
+
+    
+<div class="main-content">
+    <section class="body-font">
 
       <div
-        class="container mx-auto flex px-5 py-24 items-center justify-center flex-col whichcar-landing-template-main"
+        class="  container mx-auto flex px-5 py-24 items-center justify-center flex-col whichcar-landing-template-main"
       >
         <div class="flex lg:w-2/6 md:w-3/6 w-5/6 overflow-hidden">
           <div class="flex image-cont rounded-md">
@@ -67,11 +79,13 @@
           </div>
         </div>
         <div class="text-center lg:w-2/3 w-full">
-          <h1
-            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white"
+
+          <h1 id="whichcar"
+            class="whichcar title-font sm:text-4xl text-3xl mb-4 font-medium text-white"
           >
             Why WHICHCAR?
           </h1>
+          
           <p class="leading-relaxed mb-8">
             We provide you the best suggestion for Cars, as per your
             requirements. No need to worry about technical features, connect
@@ -89,9 +103,9 @@
       </div>
     </section>
 
-    <section class="text-gray-400 bg-gray-900 body-font">
+    <section class="    body-font">
       <h3
-        class="title-font sm:text-4xl text-center text-3xl mb-4 font-medium text-gray-300"
+        class="title-font sm:text-4xl text-center text-3xl mb-4 font-medium "
       >
         Steps to get suggestions:
       </h3>
@@ -258,8 +272,8 @@
         </div>
       </div>
     </section>
-
-    <footer class="text-gray-400 bg-gray-900 body-font">
+  </div>
+    <footer class="  body-font">
       <div
         class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col lg:w-2/6 justify-center"
       >
@@ -273,11 +287,15 @@
           <span class="ml-3 text-xl">Whichcar</span>
         </a>
         <p
-          class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4"
+          class="text-sm  sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4"
         >
           © 2022 Whichcar — All rights reserved.
         </p>
       </div>
     </footer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <script src="utils/script.js"></script>
+
   </body>
 </html>

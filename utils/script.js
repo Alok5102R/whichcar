@@ -63,3 +63,40 @@ function resetFields() {
 }
 
 
+// toggle button starts 
+
+localStorage. clear();
+const checkbox = document.getElementById('checkbox');
+
+checkbox.addEventListener('change', ()=>{
+ 
+  toggle_light_mode();
+})
+
+//Dark mode c
+window.addEventListener("storage", function () {
+  if (localStorage.lightMode == "light") {
+      app.setAttribute("light-mode", "light");
+  } else {
+      app.setAttribute("light-mode", "dark");
+  }
+}, false);
+var app = document.getElementsByTagName("BODY")[0];
+if (localStorage.lightMode == "light") {
+  app.setAttribute("light-mode", "light");
+}
+
+function toggle_light_mode() {
+  var app = document.getElementsByTagName("BODY")[0];
+  if (localStorage.lightMode == "light") {
+      localStorage.lightMode = "dark";
+      app.setAttribute("light-mode", "dark");
+  } else {
+      localStorage.lightMode = "light";
+      app.setAttribute("light-mode", "light");
+  }
+
+
+}
+
+// toggle button ends 
