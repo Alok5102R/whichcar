@@ -1,13 +1,12 @@
 body {
   animation: fade-in 0.5s forwards;
-  
 }
 
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
-
 
 .cont {
   transform: translate(-50%, 50%);
@@ -21,7 +20,7 @@ html, body {
   animation: slide 12s infinite;
 }
 
-.noresult_text{
+.noresult_text {
   display: none;
   font-size: 22px;
   text-align: center;
@@ -34,18 +33,18 @@ html, body {
   color: blue;
 } */
 
-@keyframes shake{
-  0%{
-    transform: translateX(0)
+@keyframes shake {
+  0% {
+    transform: translateX(0);
   }
-  25%{
+  25% {
     transform: translateX(12px);
   }
-    
-  50%{
+
+  50% {
     transform: translateX(-12px);
   }
-  100%{
+  100% {
     transform: translateX(0px);
   }
 }
@@ -109,7 +108,7 @@ html, body {
   }
 }
 
-#btn:hover{
+#btn:hover {
   color: blue;
   background-color: white;
   transform: scale(1.09);
@@ -119,21 +118,21 @@ html, body {
 
 /* ======= For choose.html ======= */
 #carList {
-    max-height: 220px;
-    overflow-y: auto;
+  max-height: 220px;
+  overflow-y: auto;
 }
 
 .carLink {
-    width: 100%;
-    padding: 10px;
-    display: block;
+  width: 100%;
+  padding: 10px;
+  display: block;
 }
 
 .suggestions {
   display: none;
 }
 
-.logo{
+.logo {
   background-color: rgb(216, 220, 221);
   border-radius: 50%;
 }
