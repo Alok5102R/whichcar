@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif; background-color: black; color: #006bb3;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #33adff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=text]:focus, select:focus, textarea:focus {
+border: 3px solid #6600ff;
+outline: none;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: black;
+  padding: 20px;
+  color: #006bb3;
+  width: auto;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+button{
+ background-color: #008ae6;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005c99;
+}
+</style>
+
+</head>
+<body>
+
+<h2 style="text-align:center;">Contact Form</h2>
+
+<div class="container">
+  <form name="mform">
+    <label for="fname"><h4>Name:</h4></label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname"><h4>Email:</h4></label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="subject"><h4>Message:</h4></label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <button type="button" onclick="Fsubmit()"> Submit </button>
+    <h4 id="sub"></h4>
+  </form>
+</div>
+
+<script>
+function Fsubmit(){
+document.querySelector('#sub').textContent = "Your Response is submitted !!";
+}
+</script>
+
+</body>
+</html>
