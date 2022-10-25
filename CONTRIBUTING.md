@@ -26,7 +26,6 @@ Add your achievements! What you did at this Hacktoberfest? Write it down, don't 
 - Put all non-html files(except image) in "utils" directory.
 - Do not include VS code files.
 - Focus more on logical part than the presentation part.
-- Currently this project don't require database connection.
 - Do fork the repository to work upon issues and be a contributor.
 - Please do not create pull request without approval as it'll result in merge conflicts.
 - Before creating pull request, do check previous approved pull requests. So that your code don't conflict with them.
