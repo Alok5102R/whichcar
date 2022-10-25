@@ -184,6 +184,62 @@
 		"link": "https://cars.tatamotors.com/suv/safari"
 	},
 	{
+		"car": "Jeep Compass (Petrol)",
+		"seat": 5,
+		"colr": "🔴 🔵 ⚫ ⚪",
+		"type": "SUV",
+		"price": 20,
+		"link": "http://surl.li/dlssp"
+	},
+	{
+		"car": "MG ZS (Electric)",
+		"seat": 5,
+		"colr": "🔴 🔵 ⚫ ⚪",
+		"type": "SUV",
+		"price": 23,
+		"link": "https://www.mgmotor.co.in/vehicles/mgzsev-electric-car-in-india"
+	},
+	{
+		"car": "Hyundai Kona (Electric)",
+		"seat": 5,
+		"colr": "🔴 🔵 ⚫ ⚪",
+		"type": "SUV",
+		"price": 24,
+		"link": "https://www.hyundai.com/in/en/find-a-car/kona-electric/"
+	},
+	{
+		"car": "Mercedez Benz GLA (Petrol)",
+		"seat": 5,
+		"colr": "🔴 🔵 ⚫ ⚪",
+		"type": "SUV",
+		"price": 25,
+		"link": "https://www.mercedes-benz.com/en/vehicles/passenger-cars/gla/"
+	},
+	{
+		"car": "Skoda Octavia (Petrol)",
+		"seat": 5,
+		"colr": "🔴 🔵 ⚫ ⚪",
+		"type": "SUV",
+		"price": 27.3,
+		"link": "https://www.skoda-auto.co.in/models/new-octavia/new-octavia"
+	},
+	{
+		"car": "Hyundai Tucson (Petrol)",
+		"seat": 5,
+		"colr": "🔴 🔵 ⚫ ⚪",
+		"type": "SUV",
+		"price": 27.7,
+		"link": "https://www.hyundai.com/in/en/find-a-car/tucson/"
+	},
+	{
+		"car": "Jeep Meridian (Petrol)",
+		"seat": 5,
+		"colr": "🔴 🔵 ⚫ ⚪",
+		"type": "SUV",
+		"price": 30,
+		"link": "https://www.jeep-india.com/new-jeep-meridian.html"
+	},
+	{
 		"car": "Tesla Model 3 Electric",
 		"seat": 5,
 		"colr": "🔴 🔵 ⚫ ⚪",
