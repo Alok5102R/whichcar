@@ -2,7 +2,9 @@
 <html>
   <head>
     <title>whichcar</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+    <!-- <script type="text/js" src="./utils/animate.js"></script> -->
+  
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
@@ -12,7 +14,7 @@
     />
     <link rel="stylesheet" href="utils/style.css" />
   </head>
-  <body class="bg-gray-900">
+  <body class="bg-gray-900" >
     <header class="text-gray-400 body-font sticky top-0 z-50">
       <div
         class="container mx-auto flex flex-wrap p-5 flex-row items-center justify-between whichcar-landing-template"
@@ -42,87 +44,57 @@
       </div>
     </header>
 
-    <section class="text-gray-400 bg-gray-900 body-font">
-
-      <div
-        class="container mx-auto flex px-5 py-24 items-center justify-center flex-col whichcar-landing-template-main"
-      >
-        <div class="flex lg:w-2/6 md:w-3/6 w-5/6 overflow-hidden">
-          <div class="flex image-cont rounded-md">
-            <img
-              class="w-full mb-10 object-cover object-center rounded"
-              alt="hero"
-              src="img/logoF.png"
-            />
-            <img
-              class="w-full mb-10 object-cover object-center rounded"
-              alt="hero"
-              src="img/carY.png"
-            />
-            <img
-              class="w-full mb-10 object-cover object-center rounded"
-              alt="hero"
-              src="img/carZ.png"
-            />
+    <section class="text-gray-400 bg-gray-900 body-font" id="new-idea">
+            <img src="./img/_0020 1.png" alt="saleman" class="salesman"
+        />
+        <div class="ads">
+          <div class="ad1">
+            Why search
+          </div>
+          <div class="ad2">
+            <img src="./img/dodge beyaz 1.png" alt="car1" class="car1">
+            <p class="catch">
+              when it can find you
+            </p>
           </div>
         </div>
-        <div class="text-center lg:w-2/3 w-full">
-          <h1
-            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-white"
-          >
-            Why WHICHCAR?
-          </h1>
-          <p class="leading-relaxed mb-8">
-            We provide you the best suggestion for Cars, as per your
-            requirements. No need to worry about technical features, connect
-            with us and relax.
-          </p>
-          <div class="flex justify-center">
-            <button
-              class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg"  id="btn"
-            >
-              <a href="page/choose.html">Choose Car</a>
-            </button>
-          </div>
-
-        </div>
-      </div>
     </section>
-
+    
     <section class="text-gray-400 bg-gray-900 body-font">
       <h3
-        class="title-font sm:text-4xl text-center text-3xl mb-4 font-medium text-gray-300"
-      >
+      class="title-font sm:text-4xl text-center text-3xl mb-4 font-medium text-gray-300"
+      ><div class="m">
         Steps to get suggestions:
-      </h3>
-      <div class="container px-5 py-24 mx-auto flex flex-wrap">
-        <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
-          <div
-            class="h-full w-6 absolute inset-0 flex items-center justify-center"
-          >
-            <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
-          </div>
-          <div
-            class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm"
-          >
-            1
-          </div>
-          <div
-            class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row"
-          >
-            <div
-              class="flex-shrink-0 w-24 h-24 bg-gray-800 text-blue-400 rounded-full inline-flex items-center justify-center"
-            >
-              <svg
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                class="w-12 h-12"
-                viewBox="0 0 24 24"
-              >
-                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+      </div>
+    </h3>
+    <div class="container px-5 py-24 mx-auto flex flex-wrap">
+      <div class="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
+        <div
+        class="h-full w-6 absolute inset-0 flex items-center justify-center"
+        >
+        <div class="h-full w-1 bg-gray-800 pointer-events-none"></div>
+      </div>
+      <div
+      class="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-blue-500 text-white relative z-10 title-font font-medium text-sm"
+      >
+      1
+    </div>
+    <div
+    class="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row"
+    >
+    <div
+    class="flex-shrink-0 w-24 h-24 bg-gray-800 text-blue-400 rounded-full inline-flex items-center justify-center"
+    >
+    <svg
+    fill="none"
+    stroke="currentColor"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="2"
+    class="w-12 h-12"
+    viewBox="0 0 24 24"
+    >
+    <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
               </svg>
             </div>
             <div class="flex-grow sm:pl-6 mt-6 sm:mt-0">
@@ -279,5 +251,7 @@
         </p>
       </div>
     </footer>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./utils/script.js"></script>
   </body>
 </html>

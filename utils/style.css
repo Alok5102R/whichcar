@@ -60,31 +60,6 @@ html, body {
     opacity: 1;
   }
 }
-
-@keyframes slide-in-up {
-  from {
-    opacity: 0;
-    transform: translate(0, 100%);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-}
-
-@keyframes slide-in-side {
-  from {
-    opacity: 0;
-    transform: translate(100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    transform: translate(0, 0);
-  }
-}
-
 #btn:hover{
   color: blue;
   background-color: white;
@@ -109,3 +84,30 @@ html, body {
   display: none;
 }
 /* ======= For choose.html ======= */
+/* ===========new idea========== */
+.salesman{
+  height: 39em;
+  position: relative;
+  left: -35em;
+}
+.ad1{
+  position: relative;
+  top: -55rem;
+  left: 36rem;
+  font-size: 6rem;
+  color: white;
+  font-weight: bold;
+}
+.ad2 p{
+  position: relative;
+  top: -10em;
+  left:45rem;
+  font-size: 5rem;
+  color: white;
+  font-weight: bold;
+}
+.ad2 img{
+  position: absolute;
+  top: 5em;
+  left: 45rem;
+}

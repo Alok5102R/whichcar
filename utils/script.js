@@ -1,3 +1,21 @@
+// adding animation
+
+const animation =()=>{
+  gsap.fromTo('.salesman',{x:0},{x:500,duration:1.2})
+  // >>>>>ad1 
+  gsap.fromTo('.ad1',
+    {y:340, opacity: 0},{y:340, opacity:1, duration:.9,delay:.6})
+  
+  gsap.fromTo('.car1',
+    {x:800,y:-100},{x:0,y:0,duration:1.7,delay:2})
+
+  gsap.fromTo('.catch',{x:900},{x:0,duration:3,delay:2})
+}
+animation()
+
+const ad1 = document.getElementsByClassName('ad1')
+setTimeout(ad1.hidden,5000)
+
 let carListContainer = document.getElementById('carList');
 let suggestionHeading = document.getElementsByClassName('suggestions')[0];
 
