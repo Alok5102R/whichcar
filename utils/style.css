@@ -135,7 +135,20 @@ body{
 
 .suggestions {
   display: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 16px;
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: lemonchiffon;
 }
+
+body[light-mode=light] .suggestions{
+  color:rgb(0, 0, 0);
+}
+
+
 
 .logo {
   background-color: rgb(216, 220, 221);
