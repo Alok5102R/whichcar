@@ -1,4 +1,0 @@
-RewriteEngine on
-RewriteRule ^Whichcar.nin?$ index.html
-RewriteRule ^Cars.nin?$ page/choose.html
-RewriteRule ^Connect.nin?$ page/form.html
