@@ -6,10 +6,10 @@ let cars = {};
 
 // ==== Function to fetch data from json ====
 fetch("../utils/cardata.json")
-  .then(function(resp) {
+  .then(function (resp) {
     return resp.json();
   })
-  .then(function(data){
+  .then(function (data) {
     cars = data;
   });
 // ==== Function to fetch data from json ====
@@ -22,7 +22,7 @@ function getFilteredCars() {
 
   var seatsDrpDwn = document.getElementById('Seats');
   var minseats = seatsDrpDwn.options[seatsDrpDwn.selectedIndex].text;
-  minseats = minseats.substring(0,1);
+  minseats = minseats.substring(0, 1);
 
   var typesDrpDwn = document.getElementById('Types');
 
@@ -35,28 +35,28 @@ function getFilteredCars() {
       cars[i]['price'] >= fPrice &&
       cars[i]['price'] <= tPrice &&
       cars[i]['type'] == type &&
-      cars[i]['seat'] >= minseats 
+      cars[i]['seat'] >= minseats
     ) {
-        let carObj = {
-          car: cars[i]['car'] + ' : Rs. ' + cars[i]['price'] + ' lacs ' + ' | ' + cars[i].colr,
-          link: cars[i]['link']
-        };
-        selectedCars.push(carObj);
+      let carObj = {
+        car: cars[i]['car'] + ' : Rs. ' + cars[i]['price'] + ' lacs ' + ' | ' + cars[i].colr,
+        link: cars[i]['link']
+      };
+      selectedCars.push(carObj);
     }
   }
-  if(selectedCars.length > 0) {
+  if (selectedCars.length > 0) {
     suggestionHeading.style.display = 'block';
     carListContainer.innerHTML = '';
     noresult_textContainer.style.display = 'none';
   }
-  else{
+  else {
     noresult_textContainer.style.display = 'block';
     noresult_textContainer.classList.remove('noresult_text');
     void noresult_textContainer.offsetWidth;
     noresult_textContainer.classList.add('noresult_text');
     console.log("trigered!");
   }
-  for(let i = 0; i < selectedCars.length; i++) {
+  for (let i = 0; i < selectedCars.length; i++) {
     let carLink = document.createElement('a');
     carLink.innerText = selectedCars[i].car;
     carLink.href = selectedCars[i].link;
@@ -78,17 +78,17 @@ function resetFields() {
 localStorage.clear();
 const checkbox = document.getElementById('checkbox');
 
-checkbox.addEventListener('change', ()=>{
- 
+checkbox.addEventListener('change', () => {
+
   toggle_light_mode();
 })
 
 //Dark mode c
 window.addEventListener("storage", function () {
   if (localStorage.lightMode == "light") {
-      app.setAttribute("light-mode", "light");
+    app.setAttribute("light-mode", "light");
   } else {
-      app.setAttribute("light-mode", "dark");
+    app.setAttribute("light-mode", "dark");
   }
 }, false);
 var app = document.getElementsByTagName("BODY")[0];
@@ -100,11 +100,11 @@ function toggle_light_mode() {
   console.log("clikced")
   var app = document.getElementsByTagName("BODY")[0];
   if (localStorage.lightMode == "light") {
-      localStorage.lightMode = "dark";
-      app.setAttribute("light-mode", "dark");
+    localStorage.lightMode = "dark";
+    app.setAttribute("light-mode", "dark");
   } else {
-      localStorage.lightMode = "light";
-      app.setAttribute("light-mode", "light");
+    localStorage.lightMode = "light";
+    app.setAttribute("light-mode", "light");
   }
 
 
