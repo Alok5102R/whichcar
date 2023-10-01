@@ -190,7 +190,7 @@ const handleRegisterUser = () => {
     passwordError.textContent = "";
     confirmPasswordError.textContent = "";
     // api call
-    console.log("calling signUp api");
+    console.log("calling signUp api..");
   } else {
     setTimeout(() => {
       btn.style.display = "";
