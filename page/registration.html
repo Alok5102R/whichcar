@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="img/icon.svg" class="w-10 h-10 text-white p-1/2 bg-blue-500 rounded-full" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="../utils/style.css" />
+    <title>Registration</title>
+</head>
+
+<body class="bg-gray-900 ">
+    <div class="registration_container" >
+    <header class="body-font sticky top-0 z-50">
+        <div class="container mx-auto flex flex-wrap p-5 flex-row items-center justify-between">
+            <a href="../index.html">
+                <lottie-player class="logo" src="../img/car-logo.json" speed="1" style="width: 60px; height: '6'0px;"
+                    loop autoplay>
+                </lottie-player>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 hover:text-gray-300"></a>
+                <a class="mr-5 hover:text-gray-300"></a>
+                <a class="mr-5 hover:text-gray-300"></a>
+                <a class="mr-5 hover:text-gray-300"></a>
+            </nav>
+
+            <!-- dark mode  -->
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="label">
+                <i class="fas fa-moon"></i>
+                <i class='fas fa-sun'></i>
+                <div class='ball'>
+            </label>
+            <!-- dark mode  -->
+        </div>
+    </header>
+
+    <section class="registration_formContainer" >
+        <form id="myform" method="post" action="../index.html">
+            <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col text-center w-full mb-12">
+                    <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4">Create Account</h1>
+                </div>
+                <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                    <div class="flex flex-wrap -m-2 text-black">
+                        <div class="p-2 w-full">
+                            <div class="relative">
+                                <label for="name" class="leading-7 text-sm labelfor">Name</label>
+                                <input type="text" placeholder="Enter Your name" name="name" id="name"
+                                    class="w-full bg-opacity-40 rounded border focus:border-blue-500  focus:ring-2 focus:ring-blue-900 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                <label class="leading-7 text-sm registration_error-label" id="nameError"></label>
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <div class="relative">
+                                <label for="email" class="leading-7 text-sm  labelfor ">Email</label>
+                                <input type="text" placeholder="Enter Your Email Id" name="email" id="email"
+                                    class="w-full bg-opacity-40 rounded border focus:border-blue-500  focus:ring-2 focus:ring-blue-900 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                <label id="emailError" class="leading-7 text-sm registration_error-label"></label>
+                            </div>
+                        </div>
+
+                        <div class="p-2 w-full">
+                            <div class="relative">
+                                <label for="password" class="leading-7 text-sm  labelfor ">Password</label>
+                                <input type="password" placeholder="Create A Password" name="password" id="password"
+                                    class="w-full bg-opacity-40 rounded border focus:border-blue-500  focus:ring-2 focus:ring-blue-900 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                <label id="passwordError" class="leading-7 text-sm registration_error-label"></label>
+                            </div>
+                        </div>
+                        <div class="p-2 w-full">
+                            <div class="relative">
+                                <label for="confirmPassword" class="leading-7 text-sm  labelfor ">Confirm
+                                    Password</label>
+                                <input type="password" placeholder="Confirm Your Password" name="confirmPassword"
+                                    id="confirmPassword"
+                                    class="w-full bg-opacity-40 rounded border focus:border-blue-500  focus:ring-2 focus:ring-blue-900 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                <label id="confirmPasswordError" class="leading-7 text-sm registration_error-label"></label>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="submitBtn" class="p-2 w-full flex justify-center flex  mt-5 mb-100">
+
+                    <input type="button" value="Register" onclick="handleRegisterUser()"
+                        class="flex  text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg registration_submitBtn" />
+                      
+                </div>
+                <div id="spinner" class="p-2 w-full flex justify-center flex mx-auto mt-5 mb-100"></div>
+               
+
+        </form>
+    </section>
+
+    <footer class="body-font justify-center registration_footer">
+        <div class="container  px-5 py-8 mx-auto flex items-center sm:flex-row flex-col lg:w-2/6 justify-center">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                <img src="../img/icon.svg" class="w-10 h-10 text-white p-1/2 bg-blue-500 rounded-full" />
+                <span class="ml-3 whichcar text-xl">Whichcar</span>
+            </a>
+            <p class="text-sm whichcar sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">
+                © 2022 Whichcar — All rights reserved.
+            </p>
+        </div>
+    </footer>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <script src="../utils/script.js"></script>
+</body>
+
+</html>
