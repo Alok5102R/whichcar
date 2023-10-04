@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="../img/icon.svg" class="w-10 h-10 text-white p-1/2 bg-blue-500 rounded-full" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="../utils/style.css" />
+</head>
+
+<body class="bg-gray-900">
+    <header class="  body-font sticky top-0 z-50">
+        <div
+            class="container mx-auto flex flex-wrap p-5 flex-row items-center justify-between whichcar-landing-template">
+            <a class="flex title-font font-medium items-center text-gray-900 md:mb-0">
+                <a href="#">
+                    <lottie-player class="logo" src="../img/car-logo.json" speed="1" style="width: 60px; height: 60px"
+                        loop autoplay>
+                    </lottie-player>
+                </a>
+                <span class="ml-3 text-xl"></span>
+            </a>
+            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 hover:text-gray-300"></a>
+                <a class="mr-5 hover:text-gray-300"></a>
+                <a class="mr-5 hover:text-gray-300"></a>
+                <a class="mr-5 hover:text-gray-300"></a>
+            </nav>
+
+            <!-- dark mode  -->
+            <input type="checkbox" class="checkbox" id="checkbox">
+            <label for="checkbox" class="label">
+                <i class="fas fa-moon"></i>
+                <i class='fas fa-sun'></i>
+                <div class='ball'>
+            </label>
+            <!-- dark mode  -->
+        </div>
+    </header>
+
+
+    <section class="body-font">
+        <div
+            class="container mx-auto flex px-5 py-24 items-center justify-center flex-col whichcar-landing-template-main">
+            <h6 class="title-font sm:text-4xl text-center text-3xl mb-4 font-medium whichcar">Login</h6>
+            <form class="login-form">
+                <div class="form-group email text-black">
+                    <label for="email">Email</label>
+                    <input
+                        class="w-full bg-opacity-40 rounded border focus:border-blue-500  focus:ring-2 focus:ring-blue-900 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                        type="email" name="email" placeholder="someone@example.com">
+                </div>
+                <div class="form-group password text-black">
+                    <label for="password">Password</label>
+                    <input
+                        class="w-full bg-opacity-40 rounded border focus:border-blue-500  focus:ring-2 focus:ring-blue-900 text-base outline-none py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                        type="password" name="password" placeholder="********">
+                </div>
+                <div>
+                    <input type="checkbox">
+                    Keep me Signed in
+                </div>
+                <input
+                    class="flex mx-auto text-white bg-blue-500 border-0 py-2 px-8 focus:outline-none hover:bg-blue-600 rounded text-lg"
+                    type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <footer class="body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col lg:w-2/6 justify-center">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
+                <img src="../img/icon.svg" class="w-10 h-10 text-white p-1/2 bg-blue-500 rounded-full" />
+                <span class="ml-3 text-xl whichcar">Whichcar</span>
+            </a>
+            <p class="text-sm whichcar sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">
+                © 2022 Whichcar — All rights reserved.
+            </p>
+        </div>
+    </footer>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <script src="../utils/script.js"></script>
+</body>
+
+</html>
