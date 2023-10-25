@@ -22,6 +22,7 @@ body {
 }
 
 .image-cont {
+  width:95%;
   animation: slide 12s infinite;
 }
 
